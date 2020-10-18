@@ -1,0 +1,57 @@
+.all-modal {
+  height: 300px;
+  width: 600px;
+}
+.left-modal div {
+  font-size: 12px;
+}
+.left-modal {
+  float: left;
+  height: 300px;
+  width: 280px;
+  border-right: 1px solid #eee;
+}
+.right-modal {
+  float: left;
+  margin-left: 20px;
+  height: 300px;
+  width: 300px;
+}
+.filter-input div {
+  width: 100px;
+  font-size: 13px;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+}
+.filter-input input {
+  width: 150px;
+  margin-left: -10px;
+}
+.chackbox-all {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  font-size: 13px;
+}
+.chackbox {
+  height: 200px;
+  overflow-y: scroll;
+  margin-right: 40px;
+}
+.chackbox div {
+  height: 25px;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+.chackbox > div span {
+  color: #148ffe;
+}
+.tag-list {
+  display: inline-block;
+  width: 120px;
+  padding-top: 10px;
+}
+.tableBottomPop {
+  height: 300px;
+  width: 600px !important;
+}
