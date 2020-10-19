@@ -185,7 +185,7 @@ const handleButtonDel = (row) => {
 const TableEplex = () => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
-  const [newData, setNewData] = useState([]);
+  const [newData, setNewData] = useState(d1);
   const [inputValue, setInputValue] = useState("");
   const [selectValue, setSelectValue] = useState(["", ""]);
 
@@ -201,7 +201,7 @@ const TableEplex = () => {
   }, [data.length]);
 
   const onHandleChange = (value) => {
-    if (value) {
+    if (value.length !== 0) {
       setInputValue(value);
       const newInput = data.filter((items) => {
         return items.name.indexOf(value) !== -1;
@@ -327,7 +327,7 @@ const TableEplex = () => {
             ...rowSelection,
           }}
           columns={columns}
-          dataSource={data}
+          dataSource={newData}
           rowKey={(record) => record.id}
           loading={loading}
         />
